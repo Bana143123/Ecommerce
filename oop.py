@@ -74,3 +74,107 @@ A.add_item(p, 3)
 A.add_item(g, 2)
 A.display_order_details()
 A.tot_bill()
+
+'''n=list(input("enter input :",))
+def reddy(n):
+    x=len(n)
+    #print(x)
+    if x%2==0:
+        n1=int(n[(x//2)-1])
+        print(type(n1))
+        n2=int(n[(x//2)])
+        print(type(n2))
+        print((n1+n2)/2)
+        
+    else:
+        print(n[x//2])
+reddy(n)'''
+''#------------------------------------------------
+'''from collections import Counter
+s="loving some one is injurious to life"
+print(Counter(s))
+print(s.count("o"))'''
+#-------------------------------------------------
+'''list=[1,0,2,0,4,6]
+for item in list:
+    if item==0:
+        list.remove(item)
+        list.append(item)
+print(list)'''
+#===========================================
+
+'''s="loving some one is injurious to life"
+from collections import Counter
+print(Counter(s))
+print(s.count('l'))'''
+'''class v:
+    def __init__(self,value):
+        self.value=value
+
+
+
+
+    def __str__(self):
+        s=f"MyClass instance with value: {self.value}"
+        return s
+    
+if __name__=="__main__":
+   obj= v(20)
+   print(type(obj))
+   string=str(obj)
+   print(string)'''
+
+
+
+
+'''import requests
+
+re=requests.get("https://www.google.com")
+if re.status_code==200:
+    print(re.text)
+else:
+    print(re.status_code)'''
+
+
+#===========================
+'''import math
+print(math.factorial(5))
+print(math.floor(4.0))
+print(math.ceil(4.1))
+print(math.sqrt(4))'''
+'''import random
+print(random.randint(1,6))
+#print(random.choice(["d","y","23"]))'''
+#-------------------------------------
+#python Built in functions
+# print() len() min() max()......
+#map(function,sequence)  filter(function,sequence) reduce(function,sequence)
+#Reduce function
+from functools import reduce
+
+def sum(a,b):
+    return a+b
+
+list_a = [1,2,3,4,5,6]
+Total_sum = reduce(sum,list_a)
+print(Total_sum)   
+
+# Filter method filters the elements in the sequence based on the result of a function and return values
+
+def positive_num(n):
+    return n>0
+li = [1,-2,7,-7,9]
+pos = filter(positive_num,li)
+print(list(pos))
+# Map applies a given function to each item of the sequence and return a sequence of the result.
+
+def square(n):
+    return n*n
+
+lis = [1,2,3,4,5]
+out = map(square,lis)
+print(list(out))
+
+#================
+line = list(map(int,input().split()))
+print(line)
