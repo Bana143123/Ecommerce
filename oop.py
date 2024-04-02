@@ -297,3 +297,123 @@ print(flat)'''
 L= ['1','3','5','6']
 res=[int(i) for i in L]
 print(res)
+
+
+# Online Python compiler (interpreter) to run Python online.
+# Write Python 3 code in this online editor and run it.
+#print("Try programiz.pro")
+
+
+'''a = " i am narendra kumar reddy"
+s=a.split()
+print(s)
+rev=[]
+for i in range(len(s)):
+    rev.append(s[-i-1])                  
+rev_string = " ".join(rev)
+print(rev_string)
+print(type(rev_string))'''
+'''
+L= ["python","java","c"]
+dic={}
+for i,j in enumerate(L):
+    dic.update({i:j})
+print(dic)'''
+
+'''L  = [1,34,67,"a",54,"v",2]
+sum=0
+for i in L:
+    if isinstance(i,int):
+        sum+=i
+print(sum)'''
+
+'''L=[1,34,67,"a",54,"v",2]
+sum=0
+for i in L:
+    if isinstance(i,int):
+        for digit in str(i):
+            sum+=int(digit)
+print(sum)'''
+'''def pri(n):
+    if n<=1:
+        return False
+    for i in range(2,int(n**0.5)+1):
+        if n%i==0:
+            return False
+    return True
+n=20
+if pri(n):
+    print(f"{n} : Prime number")
+else:
+    print(f"{n} : Not a prime")'''
+'''l= [2,4,6,8,4,1,45]
+for i in range(len(l)-1):
+    for j in range(len(l)-1):
+        if l[j]>l[j+1]:
+            l[j],l[j+1]=l[j+1],l[j]
+print(l)'''
+
+'''def fibn(n):
+    fib=[0,1]
+    for i in range(2,n):
+        next=fib[i-1]+fib[i-2]
+        fib.append(next)
+    return fib
+res=fibn(10)
+print(res)'''
+'''def increment(a):
+    while True:
+        a+=1
+        yield a
+a=5
+res=increment(a)
+print(next(res))
+print(next(res))
+print(next(res))'''
+'''def fact(n):
+    if n==1:
+        return 1
+    return n*fact(n-1)
+
+n=int(input())
+re=fact(n)
+print(re)'''
+'''import time
+
+# Define the decorator
+def calculate_execution_time(func):
+    def wrapper(*args, **kwargs):
+        start_time = time.time()  # Record the start time
+        result = func(*args, **kwargs)  # Call the original function
+        end_time = time.time()  # Record the end time
+        execution_time = end_time - start_time  # Calculate the execution time
+        print(f"Execution time of '{func.__name__}': {execution_time} seconds")
+        return result
+    return wrapper
+
+# Apply the decorator to the function
+@calculate_execution_time
+def factorial(n):
+    if n == 1:
+        return 1
+    else:
+        return n * factorial(n-1)
+
+# Call the function
+result = factorial(5)
+print("Factorial:", result)'''
+
+
+'''
+L = [1,[3,5],4,[5,7,0]]
+flat=[]
+for i in L:
+    if isinstance(i,list):
+        flat.extend(i)
+    else:
+        flat.append(i)
+print(flat)'''
+
+L= ['1','3','5','6']
+res=[int(i) for i in L]
+print(res)
