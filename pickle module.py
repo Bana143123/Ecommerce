@@ -2,6 +2,7 @@
 ## Data Serialization and Deserialization with Pickle
 #################################
 ## Data serialization : It is the process of converting python objects into a format for transfer,storage and distribution purpose on physical devices.
+## serialization and deserialization using pickle module in pythom
  
 import pickle
  
