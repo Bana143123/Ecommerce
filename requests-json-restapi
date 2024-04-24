@@ -1,7 +1,7 @@
 ###################
 # Coding Challenge Solution
 ###################
- 
+ #JSON is not Python proprietary and is used to exchange data between different languages and applications.
 import json
 import requests
 import csv
